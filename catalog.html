@@ -1,133 +1,226 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Глейси</title>
-</head>
-<body>
-<header>
-  <nav>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/150x100" alt="Логотип сайта магазина мороженого «Глэйси»"
-           width="154" height="64">
-    </a>
-    <ul aria-label="Главное меню">
-      <li>
-        <a href="#">Каталог</a>
-      </li>
-      <li>
-        <a href="#">Доставка и оплата</a>
-      </li>
-      <li>
-        <a href="#">О компании</a>
-      </li>
-    </ul>
-    <ul aria-label="Меню пользователя">
-      <li>
-        <button type="submit">Поиск</button>
-      </li>
-      <li>
-        <a href="#" aria-label="Вход в личный кабинет">Вход</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Корзина">2 товара</a>
-      </li>
-    </ul>
-    <div>
-      <p>С 10 до 20, ежедневно</p>
-      <a href="tel:+78124502525" aria-label="Контактный телефон 88124502525">8 812 450-25-25</a>
-    </div>
-  </nav>
-</header>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="page-header__logo" href="index.html">
+          <img src="https://via.placeholder.com/150x100" alt="Логотип сайта магазина мороженого «Глэйси»"
+               width="154" height="64">
+        </a>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">О компании</a>
+          </li>
+        </ul>
 
-<main>
-  <ul aria-label="Навигация">
-    <li><a href="index.html">Главная</a></li>
-    <li><a href="#">Каталог</a></li>
-    <li><a aria-label="Текущая страница мороженое сливочное">Сливочное</a></li>
-  </ul>
-  <h1>Сливочное мороженое</h1>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <button type="submit">
+              <span class="visually-hidden">Поиск по сайту</span>
+            </button>
+          </li>
+          <li class="user-list__item">
+            <a href="#">Вход</a>
+          </li>
+          <li class="user-list__item">
+            <a href="#">2 товара</a>
+          </li>
+        </ul>
 
-  <section>
-    <h2>Каталог сливочного мороженого</h2>
-    <ul>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-        <p>310<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное с кусочками шоколада">
-        <p>380<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-        <p>355<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле с карамельной подливкой">
-        <p>415<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное с брусничным джемом">
-        <p>325<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное с брусничным джемом</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочно-черничное с цельными ягодами черники">
-        <p>410<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочно-лимонное с карамельной присыпкой">
-        <p>375<span></span><span>/кг</span></p>
-        <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное с шоколадной стружкой">
-        <p>320<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочно-ванильное с кусочками шоколада">
-        <p>440<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное с ментоловым сиропом">
-        <p>435<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное с ментоловым сиропом</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное с кусочками черного шоколада">
-        <p>355<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
-      </li>
-      <li><img src="https://via.placeholder.com/267x267" alt="Сливочное с мятным сиропом">
-        <p>420<span>&#8381</span><span>/кг</span></p>
-        <h3><a href="#">Сливочное с мятным сиропом</a></h3>
-      </li>
-    </ul>
-  </section>
-</main>
+        <div class="page-header__contacts">
+          <p class="page-header__working-time">С 10 до 20, ежедневно</p>
+          <a class="page-header__phone-number" href="tel:+78124502525">8 812 450-25-25</a>
+        </div>
+      </nav>
+    </header>
 
-<footer>
-  <ul aria-label="Мы в социальных сетях">
-    <li>
-      <a href="#">Твиттер</a></li>
-    <li>
-      <a href="#">Инстаграм</a></li>
-    <li>
-      <a href="#">Фейсбук</a></li>
-    <li>
-      <a href="#">Вконтакте</a></li>
-  </ul>
+    <main class="main">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Сливочное</a></li>
+      </ul>
 
-  <ul aria-label="Документы и стандарты">
-    <li><a href="#">Для поставщиков</a></li>
-    <li><a href="#">Наши документы</a></li>
-    <li><a href="#">О производстве</a></li>
-    <li><a href="#">Экологические стандарты</a></li>
-  </ul>
+      <h1 class="main__title">Сливочное мороженое</h1>
 
-  <div>
-    <a href="#"><img src="https://via.placeholder.com/108x39" alt="Логотип «HTML Academy». Переход на страницу
-        интенсивов от HTML Academy" width="108" height="39"></a>
-    <p>Сделано в <a href="#">HTML Academy</a> &copy; 2019</p>
-  </div>
-</footer>
+      <section class="products">
+        <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
+        <ul class="product__list product">
+          <li class="product__item">
+            <img class="product__photo" src="https://via.placeholder.com/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="product__price">310
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+          </li>
+          <li class="product__item">
+            <img class="product__photo" src="https://via.placeholder.com/267x267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="product__price">380
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+          </li>
+          <li class="product__item">
+            <img class="product__photo" src="https://via.placeholder.com/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="product__price">355
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+          </li>
+          <li class="product__item">
+            <img class="product__photo" src="https://via.placeholder.com/267x267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="product__price">415
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+          </li>
 
-</body>
+
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочное с брусничным джемом">
+            <p>325
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное с брусничным джемом</a></h3>
+          </li>
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочно-черничное с цельными ягодами черники">
+            <p>410
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+          </li>
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <p>375
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+          </li>
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочное с шоколадной стружкой">
+            <p>320
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное с шоколадной стружкой</a></h3>
+          </li>
+
+
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочно-ванильное с кусочками шоколада">
+            <p>440
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
+          </li>
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочное с ментоловым сиропом">
+            <p>435
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное с ментоловым сиропом</a></h3>
+          </li>
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочное с кусочками черного шоколада">
+            <p>355
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное с кусочками черного шоколада</a></h3>
+          </li>
+          <li class="product__item">
+            <img src="https://via.placeholder.com/267x267" alt="Сливочное с мятным сиропом">
+            <p>420
+              <span class="product__currency">&#8381</span>
+              <span class="product__amount">/кг</span>
+            </p>
+            <h3 class="product__name"><a class="product__link" href="#">Сливочное с мятным сиропом</a></h3>
+          </li>
+        </ul>
+
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__direction pagination__direction--previous pagination__direction--disabled">
+              <span class="visually-hidden">Назад</span>
+            </a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__direction pagination__direction--next" href="#">
+              <span class="visually-hidden">Вперёд</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="social-links social-links__list">
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--twitter" href="#">Твиттер</a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--instagram" href="#">Инстаграм</a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--facebook" href="#">Фейсбук</a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--vkontakte" href="#">Вконтакте</a>
+        </li>
+      </ul>
+
+      <ul class="footer-nav">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Для поставщиков</a></li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Наши документы</a></li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">О производстве</a></li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Экологические стандарты</a></li>
+      </ul>
+
+      <div class="footer-copyright">
+        <a class="footer-copyright__logo" href="#">
+          <img src="https://via.placeholder.com/108x39" alt="Логотип «HTML Academy». Переход на страницу интенсивов от HTML Academy" width="108" height="39">
+        </a>
+        <p class="footer-copyright__develop">Сделано в <a class="footer-copyright__link" href="#">HTML Academy</a> &copy; 2019</p>
+      </div>
+    </footer>
+  </body>
 </html>
