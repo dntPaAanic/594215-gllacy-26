@@ -40,21 +40,25 @@
           <li class="user-list__item">
             <a href="#">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="login-form__inner">
-                <label class="visually-hidden" for="login-field">Логин</label>
-                <input class="login-form__input" id="login-field" type="email" name="login" placeholder="email@example.com" required>
-              </div>
-              <div class="login-form__inner">
-                <label for="password-field" class="visually-hidden">Пароль</label>
-                <input class="login-form__input" id="password-field" type="email" name="password" placeholder="••••••••" required>
-              </div>
-              <div class="login-form__inner">
-                <button class="button login-form__button" type="submit">Войти</button>
-                <p class="login-form__account">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </p>
-              </div>
+              <fieldset class="login-form__field">
+                <ul class="login-form__items">
+                  <li class="login-form__item">
+                    <label class="visually-hidden" for="menu-login-field">Логин</label>
+                    <input class="login-form__input" id="menu-login-field" type="email" name="login" placeholder="email@example.com" required>
+                  </li>
+                  <li class="login-form__item">
+                    <label class="visually-hidden" for="menu-password-field" >Пароль</label>
+                    <input class="login-form__input" id="menu-password-field" type="email" name="password" placeholder="••••••••" required>
+                  </li>
+                  <li class="login-form__item">
+                    <button class="button login-form__button" type="submit">Войти</button>
+                    <div class="login-form__account">
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
             </form>
           </li>
           <li class="user-list__item">
@@ -122,6 +126,10 @@
       </ul>
 
       <h1 class="main__title">Сливочное мороженое</h1>
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры для выбора мороженого</h2>
+      </section>
 
       <section class="products">
         <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
