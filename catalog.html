@@ -6,7 +6,6 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="visually-hidden" href="#main">Перейти к основному контенту</a>
       <nav class="main-nav">
         <a class="page-header__logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип сайта магазина мороженого «Глэйси»"
@@ -41,6 +40,7 @@
             <a href="#">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="login-form__field">
+                <legend class="visually-hidden">Форма входа на сайт</legend>
                 <ul class="login-form__items">
                   <li class="login-form__item">
                     <label class="visually-hidden" for="menu-login-field">Логин</label>
@@ -129,6 +129,80 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры для выбора мороженого</h2>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filters-form">
+            <legend class="filters-form__title">Сортировка мороженого:</legend>
+            <label class="visually-hidden" for="filters-price-sort" >Сортировка:</label>
+            <select class="filters-form__field filters-form__field--price-sort" name="price-sort" id="filters-price-sort">
+              <option value="popularity" selected>по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="filters-form">
+            <legend class="filters-form__title">Цена: 100 руб. - 500 руб.</legend>
+            <div class="filters-form__field filters-form__field--range">
+              <div class="range-scale">
+                <div class="range-scale__scale">
+                  <div class="range-scale__between-toggle"></div>
+                </div>
+                <div class="range-scale__toggle range-scale__toggle--min"></div>
+                <div class="range-scale__toggle range-scale__toggle--max"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="filters-form">
+            <legend class="filters-form__title">Жирность:</legend>
+            <ul class="filters-form__field">
+              <li class="filters-form__item">
+                <input type="radio" class="filters-form__radio" name="fatness" id="fatness-1" value="0">
+                <label for="fatness-1" class="filters-form__label">0%</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="radio" class="filters-form__radio" name="fatness" id="fatness-2" value="10">
+                <label for="fatness-2" class="filters-form__label">10%</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="radio" class="filters-form__radio" name="fatness" id="fatness-3" value="30">
+                <label for="fatness-3" class="filters-form__label">30%</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="radio" class="filters-form__radio" name="fatness" id="fatness-4" value="100">
+                <label for="fatness-4" class="filters-form__label">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filters-form">
+            <legend class="filters-form__title">Наполнители</legend>
+            <ul class="filters-form__field">
+              <li class="filters-form__item">
+                <input type="checkbox" class="filters-form__checkbox" id="topping-1" name="topping" value="chocolate" checked>
+                <label for="topping-1" class="filters-form__label">шоколадные</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="checkbox" class="filters-form__checkbox" id="topping-2" name="topping" value="sugar" checked>
+                <label for="topping-2" class="filters-form__label">сахарные присыпки</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="checkbox" class="filters-form__checkbox" id="topping-3" name=topping" value="fruit">
+                <label for="topping-3" class="filters-form__label">фрукты</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="checkbox" class="filters-form__checkbox" id="topping-4" name="topping" value="syrup">
+                <label for="topping-4" class="filters-form__label">сиропы</label>
+              </li>
+              <li class="filters-form__item">
+                <input type="checkbox" class="filters-form__checkbox" id="topping-5" name="topping" value="jam">
+                <label for="topping-5" class="filters-form__label">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filters-form__button" type="submit">Применить</button>
+        </form>
       </section>
 
       <section class="products">
