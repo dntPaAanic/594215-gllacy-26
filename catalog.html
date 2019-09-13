@@ -6,6 +6,7 @@
   </head>
   <body>
     <header class="page-header">
+      <a class="visually-hidden" href="#main">Перейти к основному контенту</a>
       <nav class="main-nav">
         <a class="page-header__logo" href="index.html">
           <img src="img/logo.svg" alt="Логотип сайта магазина мороженого «Глэйси»"
@@ -58,6 +59,49 @@
           </li>
           <li class="user-list__item">
             <a href="#">2 товара</a>
+            <div class="basket">
+              <table class="basket__table">
+                <tbody>
+                  <tr>
+                    <td class="basket__delete">
+                      <a href="" class="basket__delete-button">
+                        <span class="visually-hidden">Удалить из карзины</span></a>
+                    </td>
+                    <td class="basket__product-photo">
+                      <img src="img/product-1-small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                    </td>
+                    <td class="basket__product-name">Пломбир с апельсиновым джемом
+                    </td>
+                    <td class="basket__calculate">
+                      1,5 кг х <span class="basket__calculate--opacity">200 руб.</span>
+                    </td>
+                    <td class="basket__price">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="basket__delete">
+                      <a href="" class="basket__delete-button">
+                        <span class="visually-hidden">Удалить из карзины</span></a>
+                    </td>
+                    <td class="basket__product-photo">
+                      <img src="img/product-3-small.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                    </td>
+                    <td class="basket__product-name">Клубничный пломбир с присыпкой
+                      из белого шоколада
+                    </td>
+                    <td class="basket__calculate">
+                      1,5 кг х <span class="basket__calculate--opacity">300 руб.</span>
+                    </td>
+                    <td class="basket__price">450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="basket__total" colspan="5">
+                      Итого: 750 руб.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="button basket__button" href="#">Оформить заказ</a>
+            </div>
           </li>
         </ul>
 
@@ -68,7 +112,7 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
