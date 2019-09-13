@@ -13,24 +13,48 @@
         </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Каталог</a>
+            <a href="#" aria-haspopup="true">Каталог</a>
+            <ul class="sub-nav">
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Новинки</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Сливочное</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Щербеты</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фруктовый лед</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Мелорин</a></li>
+            </ul>
           </li>
-          <li class="site-list__item">
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">О компании</a>
-          </li>
+          <li class="site-list__item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-list__item"><a href="#">О компании</a></li>
         </ul>
 
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <button type="submit">
+            <button type="submit" form="search-form">
               <span class="visually-hidden">Поиск по сайту</span>
             </button>
+            <form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-field">Поле поиска</label>
+              <input class="search-form__input" id="search-field" type="search" name="search" placeholder="Крем-брюле" required>
+            </form>
           </li>
           <li class="user-list__item">
             <a href="#">Вход</a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="login-form__inner">
+                <label class="visually-hidden" for="login-field">Логин</label>
+                <input class="login-form__input" id="login-field" type="email" name="login" placeholder="email@example.com" required>
+              </div>
+              <div class="login-form__inner">
+                <label for="password-field" class="visually-hidden">Пароль</label>
+                <input class="login-form__input" id="password-field" type="email" name="password" placeholder="••••••••" required>
+              </div>
+              <div class="login-form__inner">
+                <button class="button login-form__button" type="submit">Войти</button>
+                <p class="login-form__account">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </div>
+            </form>
           </li>
           <li class="user-list__item">
             <a href="#">2 товара</a>
@@ -48,7 +72,9 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
-        <li class="breadcrumbs__item"><a class="breadcrumbs__link">Сливочное</a></li>
+        <li class="breadcrumbs__item" aria-current="page">
+          <a class="breadcrumbs__link"><span class="visually-hidden">Текущий пункт:</span>Сливочное</a>
+        </li>
       </ul>
 
       <h1 class="main__title">Сливочное мороженое</h1>
@@ -191,16 +217,16 @@
     <footer class="page-footer">
       <ul class="social-links social-links__list">
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--twitter" href="#">Твиттер</a>
+          <a class="social-links__link social-links__link--twitter" href="#">Глейси в твиттере</a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--instagram" href="#">Инстаграм</a>
+          <a class="social-links__link social-links__link--instagram" href="#">Глейси в инстаграме</a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--facebook" href="#">Фейсбук</a>
+          <a class="social-links__link social-links__link--facebook" href="#">Глейси в фейсбуке</a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--vkontakte" href="#">Вконтакте</a>
+          <a class="social-links__link social-links__link--vkontakte" href="#">Глейси во вконтакте</a>
         </li>
       </ul>
 

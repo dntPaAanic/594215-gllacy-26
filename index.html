@@ -13,24 +13,48 @@
         </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Каталог</a>
+            <a href="#" aria-haspopup="true">Каталог</a>
+            <ul class="sub-nav">
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Новинки</a></li>
+              <li class="sub-nav__item"><a href="catalog.html" class="sub-nav__link">Сливочное</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Щербеты</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Фруктовый лед</a></li>
+              <li class="sub-nav__item"><a href="#" class="sub-nav__link">Мелорин</a></li>
+            </ul>
           </li>
-          <li class="site-list__item">
-              <a href="#">Доставка и оплата</a>
-          </li>
-          <li class="site-list__item">
-              <a href="#">О компании</a>
-          </li>
+          <li class="site-list__item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-list__item"><a href="#">О компании</a></li>
         </ul>
 
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <button type="submit">
+            <button type="submit" form="search-form">
               <span class="visually-hidden">Поиск по сайту</span>
             </button>
+            <form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="menu-search-field">Поле поиска</label>
+              <input class="search-form__input" id="menu-search-field" type="search" name="search" placeholder="Крем-брюле" required>
+            </form>
           </li>
           <li class="user-list__item">
             <a href="#">Вход</a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="login-form__item">
+                <label class="visually-hidden" for="menu-login-field">Логин</label>
+                <input class="login-form__input" id="menu-login-field" type="email" name="login" placeholder="email@example.com" required>
+              </div>
+              <div class="login-form__item">
+                <label class="visually-hidden" for="menu-password-field" >Пароль</label>
+                <input class="login-form__input" id="menu-password-field" type="email" name="password" placeholder="••••••••" required>
+              </div>
+              <div class="login-form__item">
+                <button class="button login-form__button" type="submit">Войти</button>
+                <div class="login-form__account">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </div>
+            </form>
           </li>
           <li class="user-list__item">
             <a href="#">Пусто</a>
@@ -167,19 +191,37 @@
       </section>
     </main>
 
+    <section class="contacts">
+      <div class="contacts__map">
+        <img class="contacts__map-image" src="img/map.png" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
+      <div class="contacts__address">
+        <p class="contacts__item">
+          <span class="contacts__text">Адрес главного офиса и офлайн-магазина:</span>
+          <span class="contacts__description">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+        </p>
+        <p class="contacts__item">
+          <span class="contacts__text">Для заказов по телефону:</span>
+          <a class="contacts__description contacts__phone" href="+78124502525">8 812 450-25-25</a>
+          <span class="contacts__text">(с 10 до 20 ежедневно)</span>
+        </p>
+        <button class="button contacts__button" type="submit">Форма обратной связи</button>
+      </div>
+    </section>
+
     <footer class="page-footer">
       <ul class="social-links social-links__list">
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--twitter" href="#">Твиттер</a>
+          <a class="social-links__link social-links__link--twitter" href="#">Глейси в твиттере</a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--instagram" href="#">Инстаграм</a>
+          <a class="social-links__link social-links__link--instagram" href="#">Глейси в инстаграме</a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--facebook" href="#">Фейсбук</a>
+          <a class="social-links__link social-links__link--facebook" href="#">Глейси в фейсбуке</a>
         </li>
         <li class="social-links__item">
-          <a class="social-links__link social-links__link--vkontakte" href="#">Вконтакте</a>
+          <a class="social-links__link social-links__link--vkontakte" href="#">Глейси во вконтакте</a>
         </li>
       </ul>
 
@@ -201,5 +243,27 @@
         <p class="footer-copyright__develop">Сделано в <a class="footer-copyright__link" href="#">HTML Academy</a> &copy; 2019</p>
       </div>
     </footer>
+
+    <div class="pop-up">
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="post" aria-labelledby="feedback-title">
+        <h2 class="visually-hidden" id="feedback-title">Окно обратной связи</h2>
+        <p class="feedback__title">Мы обязательно вам ответим!</p>
+        <div class="feedback__item">
+          <label class="visually-hidden" for="feedback-name-field">Ваше имя и фамилия</label>
+          <input class="feedback__field" id="feedback-name-field" type="text" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="feedback__item">
+          <label class="visually-hidden" for="feedback-email-field">Ваш емейл</label>
+          <input class="feedback__field" id="feedback-email-field" type="text" name="email" placeholder="email@example.com">
+        </div>
+        <div class="feedback__item">
+          <label class="visually-hidden" for="feedback-textarea">Текст вашего сообщения</label>
+          <textarea class="feedback__field" id="feedback-textarea" name="message" placeholder="В свободной форме"></textarea>>
+        </div>
+        <button class="button feedback__button" type="submit">Отправить</button>
+        <button class="feedback__close-button"><span class="visually-hidden">Закрыть окно</span></button>
+      </form>
+    </div>
+
   </body>
 </html>
