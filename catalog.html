@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,7 +16,7 @@
         </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#" aria-haspopup="true">Каталог</a>
+            <a class="site-list__link site-list__link--active" href="#" aria-haspopup="true">Каталог</a>
             <ul class="sub-nav">
               <li class="sub-nav__item"><a href="#" class="sub-nav__link">Новинки</a></li>
               <li class="sub-nav__item"><a href="#" class="sub-nav__link">Сливочное</a></li>
@@ -22,8 +25,8 @@
               <li class="sub-nav__item"><a href="#" class="sub-nav__link">Мелорин</a></li>
             </ul>
           </li>
-          <li class="site-list__item"><a href="#">Доставка и оплата</a></li>
-          <li class="site-list__item"><a href="#">О компании</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Доставка и оплата</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">О компании</a></li>
         </ul>
 
         <ul class="main-nav__list user-list">
@@ -37,7 +40,7 @@
             </form>
           </li>
           <li class="user-list__item">
-            <a href="#">Вход</a>
+            <a class="user-list__link" href="#">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="login-form__field">
                 <legend class="visually-hidden">Форма входа на сайт</legend>
@@ -62,7 +65,7 @@
             </form>
           </li>
           <li class="user-list__item">
-            <a href="#">2 товара</a>
+            <a class="user-list__link" href="#">2 товара</a>
             <div class="basket">
               <table class="basket__table">
                 <tbody>
