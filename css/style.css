@@ -1,3 +1,4 @@
+/*Глобальные стили*/
 body {
   margin: 0;
   padding: 0;
@@ -35,6 +36,24 @@ html {
   clip: rect(0 0 0 0);
 }
 
+/*Основной стиль для кнопки*/
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #f06441;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+
+
+
+
+/*Меню в хедере*/
 .site-list {
   list-style: none;
 }
@@ -74,6 +93,9 @@ html {
 }
 
 .user-list__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -93,16 +115,128 @@ html {
 }
 
 .page-header__working-time {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
 
 .page-header__phone-number {
-  text-decoration: none;
-  font-size: 22px;
   font-weight: 700;
+  font-size: 22px;
   line-height: 24px;
   color: #ffffff;
+  text-decoration: none;
 }
+
+
+
+
+/*Слайдер*/
+.slider__list {
+  list-style: none;
+}
+
+.slider__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.slider__button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+
+/*offer*/
+
+.offer__list {
+  list-style: none;
+}
+
+.offer__item--raspberry {
+  background-color: #140106;
+  background-image: url("../img/raspberry-bg.jpg");
+}
+
+.offer__item--chocolate {
+  background-color: #30170d;
+  background-image: url("../img/chocolate-bg.jpg");
+}
+
+.offer__title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.offer__description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+/*products*/
+
+.product {
+  list-style: none;
+}
+
+.product__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.product__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.product__link:hover,
+.product__link:focus {
+  color: #ffbc9e;
+}
+
+.product__price {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.product__amount {
+  font-size: 30px;
+}
+
+
+/*advantages*/
+
+.advantages {
+  background-color: #ece0ca;
+  background-image: url("../img/waffle-bg.jpg");
+}
+
+.advantages__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #323232;
+}
+
+.advantages__list {
+  list-style: none;
+  color: #323232;
+}
+
+.advantages__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
+/*advert*/
+
