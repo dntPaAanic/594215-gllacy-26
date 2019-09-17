@@ -186,14 +186,14 @@ html {
 }
 
 .product__name {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 22px;
 }
 
 .product__link {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .product__link:hover,
@@ -202,8 +202,8 @@ html {
 }
 
 .product__price {
-  font-size: 45px;
   font-weight: 700;
+  font-size: 45px;
   line-height: 45px;
 }
 
@@ -220,8 +220,8 @@ html {
 }
 
 .advantages__title {
-  font-size: 24px;
   font-weight: 500;
+  font-size: 24px;
   line-height: 30px;
   color: #323232;
 }
@@ -232,11 +232,117 @@ html {
 }
 
 .advantages__item {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 22px;
 }
 
 
 /*advert*/
+
+
+/*article-note*/
+.article-note {
+  background-color: #ffffff;
+  background-image: url("../img/article-note-bg.jpg");
+}
+
+.article-note__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.article-note__preview {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.article-note__preview:hover,
+.article-note__preview:focus,
+.article-note__preview:active {
+  color: #e84d37;
+}
+
+
+
+/*subscribe*/
+.subscribe {
+  background-image: url("../img/bg-post.svg");
+}
+
+.subscribe__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #5a5a5a;
+}
+
+
+/*contacts*/
+.contacts__address {
+  color: #323232;
+
+  background-color: #fcfdfe;
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts__phone {
+  color: #323232;
+  text-decoration: none;
+}
+
+
+/*social-links*/
+.social-links__list {
+  list-style: none;
+}
+
+.social-links__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  font-size: 0;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #c1cec7;
+}
+
+.social-links__link--twitter {
+  background-image: url("../img/twitter.svg");
+}
+
+.social-links__link--instagram {
+  background-image: url("../img/instagram.svg");
+}
+
+.social-links__link--facebook {
+  background-image: url("../img/fb.svg");
+}
+
+.social-links__link--vkontakte {
+  background-image: url("../img/vk.svg");
+}
+
+
+/*footer-nav*/
+.footer-nav {
+  list-style: none;
+}
 
