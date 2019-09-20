@@ -65,10 +65,10 @@ html {
   height: 44px;
   padding: 8px 15px 8px 15px;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #999999;
-  font-weight: 400;
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -78,14 +78,17 @@ html {
 /*button*/
 .button {
   display: inline-block;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  vertical-align: middle;
   color: #ffffff;
   text-decoration: none;
 
   background-color: #f06441;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  border: none;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
@@ -225,6 +228,7 @@ html {
 
 .user-list__link {
   display: block;
+  position: relative;
   padding: 9px 13px;
 
   font-weight: 500;
@@ -236,13 +240,13 @@ html {
   background-color: rgba(255,255,255,0.2);
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .user-list__link--search {
   width: 33px;
   height: 33px;
 
-  border: none;
   border-radius: 50px;
 }
 
@@ -281,18 +285,30 @@ html {
 }
 
 .login-form__field {
-  border: none;
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
 .login-form__items {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
+}
+
+.login-form__item:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .login-form__input {
   width: 100%;
+}
+
+.login-form__account {
+  width: 120px;
 }
 
 
@@ -485,7 +501,6 @@ html {
 
 
 /*advert*/
-
 
 /*article-note*/
 .article-note {
