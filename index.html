@@ -18,7 +18,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#" aria-haspopup="true">Каталог</a>
-              <ul class="sub-nav">
+              <ul class="sub-nav dropdown">
                 <li class="sub-nav__item"><a href="#" class="sub-nav__link">Новинки</a></li>
                 <li class="sub-nav__item"><a href="catalog.html" class="sub-nav__link">Сливочное</a></li>
                 <li class="sub-nav__item"><a href="#" class="sub-nav__link">Щербеты</a></li>
@@ -32,27 +32,27 @@
 
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <button type="submit" form="search-form">
+              <button class="user-list__link user-list__link--search" type="submit" form="search-form">
                 <span class="visually-hidden">Поиск по сайту</span>
               </button>
-              <form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <form class="search-form dropdown" id="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="menu-search-field">Поле поиска</label>
-                <input class="search-form__input" id="menu-search-field" type="search" name="search" placeholder="Крем-брюле" required>
+                <input class="search-form__input input" id="menu-search-field" type="search" name="search" placeholder="Крем-брюле" required>
               </form>
             </li>
             <li class="user-list__item">
               <a class="user-list__link" href="#">Вход</a>
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="login-form dropdown" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="login-form__field">
                   <legend class="visually-hidden">Форма входа на сайт</legend>
                   <ul class="login-form__items">
                     <li class="login-form__item">
                       <label class="visually-hidden" for="menu-login-field">Логин</label>
-                      <input class="login-form__input" id="menu-login-field" type="email" name="login" placeholder="email@example.com" required>
+                      <input class="login-form__input input" id="menu-login-field" type="email" name="login" placeholder="email@example.com" required>
                     </li>
                     <li class="login-form__item">
                       <label class="visually-hidden" for="menu-password-field" >Пароль</label>
-                      <input class="login-form__input" id="menu-password-field" type="email" name="password" placeholder="••••••••" required>
+                      <input class="login-form__input input" id="menu-password-field" type="email" name="password" placeholder="••••••••" required>
                     </li>
                     <li class="login-form__item">
                       <button class="button login-form__button" type="submit">Войти</button>
