@@ -94,6 +94,34 @@ html {
 
 
 
+/*page-header*/
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__contacts {
+  position: absolute;
+  right: 25px;
+  top: 70px;
+}
+
+.page-header__working-time {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.page-header__phone-number {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
 
 /*main-nav*/
 .main-nav {
@@ -309,6 +337,14 @@ html {
 
 .login-form__account {
   width: 120px;
+  text-align: right;
+}
+
+.login-form__link {
+  color: #323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 
@@ -322,40 +358,68 @@ html {
 
 
 
-/*page-header*/
-.page-header__working-time {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
-}
-
-.page-header__phone-number {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 24px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-
-
 /*slider*/
 .slider__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 600px;
+}
+
+.slider__item {
+  text-align: center;
+  position: relative;
+  display: none;
+  padding-top: 370px;
+}
+
+.slider__item--active {
+  display: block;
 }
 
 .slider__title {
+  width: 675px;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
   color: #ffffff;
+  margin: 0 auto;
+}
+
+.slider__image {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .slider__button {
   font-size: 32px;
   line-height: 44px;
 }
+
+.slider__control {
+  display: flex;
+}
+
+.slider__toggle {
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.slider__toggle--active {
+  background-color: #ffffff;
+}
+
+
 
 
 /*breadcrumbs*/
@@ -391,6 +455,8 @@ html {
 }
 
 
+
+
 /*filters*/
 .filters {
   display: none;
@@ -413,9 +479,15 @@ html {
   line-height: 18px;
 }
 
+
+
+
 /*offer*/
 .offer__list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .offer__item--raspberry {
