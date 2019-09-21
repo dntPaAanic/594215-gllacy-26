@@ -488,6 +488,15 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.offer__item {
+  width: 560px;
+  padding: 20px;
+  position: relative;
+  border-radius: 15px;
 }
 
 .offer__item--raspberry {
@@ -497,7 +506,7 @@ html {
 
 .offer__item--chocolate {
   background-color: #30170d;
-  background-image: url("../img/chocolate-bg.jpg");
+  background-image: url("../img/choсolate-bg.jpg");
 }
 
 .offer__title {
@@ -511,6 +520,14 @@ html {
   font-size: 18px;
   line-height: 22px;
 }
+
+.offer__button {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+
 
 
 /*products*/
