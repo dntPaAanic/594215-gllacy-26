@@ -43,6 +43,11 @@ html {
   padding-left: 27px;
 }
 
+.container--contacts {
+  padding: 0;
+  position: relative;
+}
+
 /*dropdown*/
 .dropdown {
   position: absolute;
@@ -648,7 +653,7 @@ html {
 
 
 /*advantages*/
-.advantages {
+.advantages__wrapper {
   padding: 20px;
 
   background-color: #ece0ca;
@@ -803,20 +808,41 @@ html {
 }
 
 
+
+
 /*contacts*/
+.contacts__map-image {
+  width: 1200px;
+  height: 430px;
+}
 .contacts__address {
   color: #323232;
 
-  background-color: #fcfdfe;
+  background-color: #fefefe;
+  position: absolute;
+  right: 27px;
+  top: 50px;
+  padding: 25px 25px 30px;
+  width: 300px;
+  border-radius: 15px;
 }
 
-.contacts__text {
+.contacts__text,
+.contacts__work-time {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.contacts__text--width {
+  width: 150px;
 }
 
 .contacts__description {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -826,6 +852,13 @@ html {
   color: #323232;
   text-decoration: none;
 }
+
+.contacts__work-time {
+  margin-bottom: 18px;
+}
+
+
+
 
 /*pagination*/
 .pagination {
@@ -840,19 +873,34 @@ html {
   text-decoration: none;
 }
 
+
+
+/*page-footer*/
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /*social-links*/
 .social-links__list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-links__item {
+  margin-right: 15px;
 }
 
 .social-links__link {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
 
   font-size: 0;
 
   background-size: cover;
+  background-repeat: no-repeat;
   border: 2px solid #c1cec7;
   border-radius: 50%;
   opacity: 0.8;
