@@ -275,25 +275,27 @@
       </div>
     </footer>
 
-    <div class="pop-up">
-      <form class="feedback" action="https://echo.htmlacademy.ru" method="post" aria-labelledby="feedback-title">
+    <div class="pop-up-overlay">
+      <section class="feedback">
         <h2 class="visually-hidden" id="feedback-title">Окно обратной связи</h2>
-        <p class="feedback__title">Мы обязательно вам ответим!</p>
-        <div class="feedback__item">
-          <label class="visually-hidden" for="feedback-name-field">Ваше имя и фамилия</label>
-          <input class="feedback__field" id="feedback-name-field" type="text" name="name" placeholder="Имя Фамилия">
-        </div>
-        <div class="feedback__item">
-          <label class="visually-hidden" for="feedback-email-field">Ваш емейл</label>
-          <input class="feedback__field" id="feedback-email-field" type="text" name="email" placeholder="email@example.com">
-        </div>
-        <div class="feedback__item">
-          <label class="visually-hidden" for="feedback-textarea">Текст вашего сообщения</label>
-          <textarea class="feedback__field" id="feedback-textarea" name="message" placeholder="В свободной форме"></textarea>>
-        </div>
-        <button class="button feedback__button" type="submit">Отправить</button>
-        <button class="feedback__close-button"><span class="visually-hidden">Закрыть окно</span></button>
-      </form>
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post" aria-labelledby="feedback-title">
+          <p class="feedback__title">Мы обязательно вам ответим!</p>
+          <div class="feedback__item">
+            <label class="visually-hidden" for="feedback-name-field">Ваше имя и фамилия</label>
+            <input class="input feedback__input" id="feedback-name-field" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="feedback__item">
+            <label class="visually-hidden" for="feedback-email-field">Ваш емейл</label>
+            <input class="input feedback__input" id="feedback-email-field" type="text" name="email" placeholder="email@example.com">
+          </div>
+          <div class="feedback__item">
+            <label class="visually-hidden" for="feedback-textarea">Текст вашего сообщения</label>
+            <textarea class="feedback__textarea" id="feedback-textarea" name="message" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="button feedback__button" type="submit">Отправить</button>
+          <button class="feedback__close-button"><span class="visually-hidden">Закрыть окно</span></button>
+        </form>
+      </section>
     </div>
 
   </body>

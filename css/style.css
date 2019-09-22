@@ -881,11 +881,17 @@ html {
   flex-direction: row;
   justify-content: space-between;
 }
+
+
+
+
 /*social-links*/
 .social-links__list {
   list-style: none;
+  margin: 40px 0 0;
   display: flex;
   flex-direction: row;
+  padding: 0;
 }
 
 .social-links__item {
@@ -932,9 +938,23 @@ html {
 }
 
 
+
+
 /*footer-nav*/
 .footer-nav {
   list-style: none;
+  padding: 0;
+  margin: 35px 0 0;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-nav__item {
+  margin-bottom: 5px;
+  min-width: 135px;
+  padding-left: 22px;
 }
 
 .footer-nav__link {
@@ -953,10 +973,26 @@ html {
 
 .footer-nav__link--favorite {
   font-weight: 700;
+  position: relative;
+}
+
+.footer-nav__link--favorite::before {
+  position: absolute;
+  top: 2px;
+  left: -22px;
+  width: 15px;
+  height: 13px;
+  content: "";
+  background-image: url(../img/heart.svg);
 }
 
 
+
+
 /*footer-copyright*/
+.footer-copyright {
+  margin-top: 18px;
+}
 
 .footer-copyright__develop {
   font-weight: 400;
@@ -975,7 +1011,73 @@ html {
 
 
 
-/*pop-up*/
-.pop-up {
+
+/*pop-up-overlay*/
+.pop-up-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
   display: none;
+}
+
+
+
+
+/*feedback*/
+.feedback {
+  position: fixed;
+  top: 25%;
+  left: 36%;
+  padding: 16px 25px 25px;
+  width: 480px;
+  color: #323232;
+  border-radius: 15px;
+  background-color: #f8f7f4;
+}
+
+.feedback__form {
+  position: relative;
+}
+
+.feedback__title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.feedback__input {
+  width: 265px;
+}
+
+.feedback__textarea {
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 155px;
+}
+
+.feedback__button {
+  display: block;
+  margin-left: auto;
+  padding: 10px 25px;
+}
+
+.feedback__close-button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  width: 18px;
+  height: 18px;
+
+  border: none;
+  background-color: #f8f7f4;
+  background-image: url("../img/cross-big.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
