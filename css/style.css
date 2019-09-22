@@ -722,15 +722,26 @@ html {
 
 /*advert*/
 .advert {
-  РАЗОБРАТЬСЯ С КОНТЕЙНЕРОМ
+  margin-bottom: 40px;
+}
+.advert__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .advert__item {
   width: 560px;
+  border-radius: 15px;
+  min-height: 220px;
 }
 /*article-note*/
 .article-note {
   background-color: #ffffff;
   background-image: url("../img/article-note-bg.jpg");
+  padding: 23px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #323232;
 }
 
 .article-note__title {
@@ -738,6 +749,11 @@ html {
   font-size: 16px;
   line-height: 22px;
   color: #323232;
+  margin: 0;
+}
+
+.article-note__inner {
+  width: 285px;
 }
 
 .article-note__preview {
@@ -745,7 +761,10 @@ html {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
-  text-decoration: underline;
+  text-decoration: none;
+  box-shadow:
+    inset 0 -3px white,
+    inset 0 -5px #323232;
 }
 
 .article-note__preview:hover,
@@ -759,6 +778,16 @@ html {
 /*subscribe*/
 .subscribe {
   background-image: url("../img/bg-post.svg");
+  padding: 5px;
+}
+
+.subscribe__wrapper {
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px 35px;
 }
 
 .subscribe__title {
@@ -766,6 +795,11 @@ html {
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
+  margin: 0 0 35px;
+}
+
+.subscribe__input {
+  width: 368px;
 }
 
 

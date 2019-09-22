@@ -78,9 +78,9 @@
     </header>
 
     <main class="main">
-      <div class="container">
-        <h1 class="visually-hidden">Глэйси - магазин мороженого собственного производства</h1>
-        <section class="slider">
+      <h1 class="visually-hidden">Глэйси - магазин мороженого собственного производства</h1>
+      <section class="slider">
+        <div class="container">
           <h2 class="visually-hidden">Новинки нашего магазина</h2>
           <ul class="slider__list">
             <li class="slider__item slider__item--active">
@@ -111,9 +111,11 @@
               <span class="visually-hidden">Слайд 3</span>
             </button>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="offer">
+      <section class="offer">
+        <div class="container">
           <h2 class="visually-hidden">Специальные предложения</h2>
           <ul class="offer__list">
             <li class="offer__item offer__item--raspberry">
@@ -131,9 +133,11 @@
               <a class="button offer__button" href="#">Хочу шоколадки!</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="products">
+      <section class="products">
+        <div class="container">
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="products__list product">
             <li class="product__item product__item--hit">
@@ -169,9 +173,11 @@
               <a class="button product__button" href="#">Быстрый просмотр</a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="advantages">
+      <section class="advantages">
+        <div class="container">
           <h2 class="visually-hidden">Наши приемущества</h2>
           <p class="advantages__title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <ul class="advantages__list">
@@ -184,32 +190,40 @@
             <li class="advantages__item advantages__item--delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
               который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="advert">
+      <section class="advert">
+        <div class="container advert__wrapper">
           <h2 class="visually-hidden">Реклама и новости</h2>
           <article class="advert__item article-note">
             <h3 class="article-note__title">Новое в нашем блоге</h3>
-            <a class="article-note__preview" href="#">10 способов сервировки фруктовых щербетов к столу
-            </a>
+            <p class="article-note__inner">
+              <a class="article-note__preview" href="#">10 способов сервировки фруктовых щербетов к столу
+              </a>
+            </p>
           </article>
           <article class="advert__item subscribe">
-            <p class="subscribe__title">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-              происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="email-subscription">Подпишитесь на нашу рассылку</label>
-              <input class="subscribe__input" id="email-subscription" type="email" name="email-subscription" placeholder="email@example.com" required>
-              <button class="button subscribe__button" type="submit">Отправить</button>
-            </form>
+            <div class="subscribe__wrapper">
+              <p class="subscribe__title">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
+                происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="email-subscription">Подпишитесь на нашу рассылку</label>
+                <input class="input subscribe__input " id="email-subscription" type="email" name="email-subscription" placeholder="email@example.com" required>
+                <button class="button subscribe__button" type="submit">Отправить</button>
+              </form>
+            </div>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="contacts">
-          <div class="contacts__map">
-            <img class="contacts__map-image" src="img/map.png" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          </div>
-          <div class="contacts__address">
+      <section class="contacts">
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="img/map.png" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </div>
+        <div class="contacts__address">
+          <div class="container">
             <p class="contacts__item">
               <span class="contacts__text">Адрес главного офиса и офлайн-магазина:</span>
               <span class="contacts__description">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
@@ -221,8 +235,8 @@
             </p>
             <button class="button contacts__button" type="submit">Форма обратной связи</button>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
