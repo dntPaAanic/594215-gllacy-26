@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__wrapper">
         <nav class="main-nav">
           <a class="page-header__logo" href="index.html">
             <img src="img/logo.svg" alt="Логотип сайта магазина мороженого «Глэйси»"
@@ -18,7 +18,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active" href="#" aria-haspopup="true">Каталог</a>
-              <ul class="sub-nav">
+              <ul class="sub-nav dropdown">
                 <li class="sub-nav__item"><a href="#" class="sub-nav__link">Новинки</a></li>
                 <li class="sub-nav__item"><a href="#" class="sub-nav__link">Сливочное</a></li>
                 <li class="sub-nav__item"><a href="#" class="sub-nav__link">Щербеты</a></li>
@@ -32,17 +32,17 @@
 
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <button type="submit" form="search-form">
+              <button class="user-list__link user-list__link--search" type="submit" form="search-form">
                 <span class="visually-hidden">Поиск по сайту</span>
               </button>
-              <form class="search-form" id="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <form class="search-form dropdown" id="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="search-field">Поле поиска</label>
                 <input class="search-form__input" id="search-field" type="search" name="search" placeholder="Крем-брюле" required>
               </form>
             </li>
             <li class="user-list__item">
               <a class="user-list__link" href="#">Вход</a>
-              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <form class="login-form dropdown" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="login-form__field">
                   <legend class="visually-hidden">Форма входа на сайт</legend>
                   <ul class="login-form__items">
@@ -67,7 +67,7 @@
             </li>
             <li class="user-list__item">
               <a class="user-list__link user-list__link--full-basket" href="#">2 товара</a>
-              <div class="basket">
+              <div class="basket dropdown">
                 <table class="basket__table">
                   <tbody>
                   <tr>
@@ -138,8 +138,8 @@
           <h2 class="visually-hidden">Фильтры для выбора мороженого</h2>
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-form__filter">
-              <legend class="filters-form__title">Сортировка мороженого:</legend>
-              <label class="visually-hidden" for="filters-price-sort" >Сортировка:</label>
+              <legend class="filters-form__title">Сортировка:</legend>
+              <label class="visually-hidden" for="filters-price-sort" >Сортировка мороженого:</label>
               <select class="filters-form__field filters-form__field--price-sort" name="price-sort" id="filters-price-sort">
                 <option value="popularity" selected>по популярности</option>
                 <option value="cheap">сначала недорогие</option>
@@ -211,8 +211,11 @@
             <button class="button filters-form__button" type="submit">Применить</button>
           </form>
         </section>
+      </div>
 
-        <section class="products">
+
+      <section class="products">
+        <div class="container">
           <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
           <ul class="product__list product">
             <li class="product__item">
@@ -221,6 +224,7 @@
               <p class="product__price">310
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
@@ -228,6 +232,7 @@
               <p class="product__price">380
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
@@ -235,6 +240,7 @@
               <p class="product__price">355
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
@@ -242,6 +248,7 @@
               <p class="product__price">415
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
 
 
@@ -251,6 +258,7 @@
               <p class="product__price">325
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
@@ -258,6 +266,7 @@
               <p class="product__price">410
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
@@ -265,6 +274,7 @@
               <p class="product__price">375
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочное с шоколадной стружкой</a></h3>
@@ -272,6 +282,7 @@
               <p class="product__price">320
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
 
 
@@ -281,6 +292,7 @@
               <p class="product__price">440
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочное с ментоловым сиропом</a></h3>
@@ -288,6 +300,7 @@
               <p class="product__price">435
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочное с кусочками черного шоколада</a></h3>
@@ -295,6 +308,7 @@
               <p class="product__price">355
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
             <li class="product__item">
               <h3 class="product__name"><a class="product__link" href="#">Сливочное с мятным сиропом</a></h3>
@@ -302,6 +316,7 @@
               <p class="product__price">420
                 <span class="product__currency">&#8381</span><span class="product__amount">/кг</span>
               </p>
+              <a class="button product__button" href="#" >Быстрый просмотр</a>
             </li>
           </ul>
 
@@ -332,8 +347,9 @@
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+
+      </section>
     </main>
 
     <footer class="page-footer">
