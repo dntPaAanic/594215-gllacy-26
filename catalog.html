@@ -37,7 +37,7 @@
               </button>
               <form class="search-form dropdown" id="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <label class="visually-hidden" for="search-field">Поле поиска</label>
-                <input class="search-form__input" id="search-field" type="search" name="search" placeholder="Крем-брюле" required>
+                <input class="input search-form__input" id="search-field" type="search" name="search" placeholder="Крем-брюле" required>
               </form>
             </li>
             <li class="user-list__item">
@@ -48,17 +48,17 @@
                   <ul class="login-form__items">
                     <li class="login-form__item">
                       <label class="visually-hidden" for="menu-login-field">Логин</label>
-                      <input class="login-form__input" id="menu-login-field" type="email" name="login" placeholder="email@example.com" required>
+                      <input class="input login-form__input" id="menu-login-field" type="email" name="login" placeholder="email@example.com" required>
                     </li>
                     <li class="login-form__item">
                       <label class="visually-hidden" for="menu-password-field" >Пароль</label>
-                      <input class="login-form__input" id="menu-password-field" type="email" name="password" placeholder="••••••••" required>
+                      <input class="input login-form__input" id="menu-password-field" type="email" name="password" placeholder="••••••••" required>
                     </li>
                     <li class="login-form__item">
                       <button class="button login-form__button" type="submit">Войти</button>
                       <div class="login-form__account">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
+                        <a class="login-form__link" href="#">Забыли пароль?</a>
+                        <a class="login-form__link" href="#">Новая регистрация</a>
                       </div>
                     </li>
                   </ul>
@@ -72,8 +72,8 @@
                   <tbody>
                   <tr>
                     <td class="basket__delete">
-                      <a href="" class="basket__delete-button">
-                        <span class="visually-hidden">Удалить из карзины</span></a>
+                      <a href="#" class="basket__delete-button">
+                        <span class="visually-hidden">Удалить из корзины</span></a>
                     </td>
                     <td class="basket__product-photo">
                       <img src="img/product-1-small.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
@@ -371,7 +371,7 @@
 
         <ul class="footer-nav">
           <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Для поставщиков</a></li>
+            <a class="footer-nav__link footer-nav__link--favorite" href="#">Для поставщиков</a></li>
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#">Наши документы</a></li>
           <li class="footer-nav__item">

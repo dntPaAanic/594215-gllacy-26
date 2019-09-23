@@ -223,7 +223,7 @@ html {
 /*sub-nav*/
 .sub-nav {
   width: 143px;
-  padding: 0;
+  padding: 5px 0;
 
   list-style: none;
 }
@@ -358,6 +358,10 @@ html {
   list-style: none;
 }
 
+.login-form__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .login-form__item:last-child {
   display: flex;
   flex-direction: row;
@@ -371,7 +375,7 @@ html {
 .login-form__account {
   width: 120px;
 
-  text-align: right;
+  text-align: left;
 }
 
 .login-form__link {
@@ -381,12 +385,73 @@ html {
   color: #323232;
 }
 
+.login-form__link:hover {
+  color: #e84d37;
+}
+
 
 
 
 /*basket*/
 .basket {
   display: none;
+  padding: 20px 15px;
+
+  text-align: right;
+}
+
+.basket__table {
+  width: 540px;
+
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket__table td {
+  padding-right: 15px;
+}
+
+.basket__delete {
+  width: 25px;
+  padding-top: 10px;
+}
+
+.basket__delete-button {
+  display: block;
+  width: 11px;
+  height: 11px;
+
+  background-image: url("../img/cross-small.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.basket__product-photo {
+  width: 45px;
+}
+.basket__product-name {
+  width: 220px;
+
+  text-align: left;
+}
+
+.basket__calculate {
+  width: 110px;
+}
+
+.basket__price {
+  width: 73px;
+}
+
+.basket__total {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+
+  border-top: 1px solid #cacac7;
 }
 
 
@@ -1060,6 +1125,8 @@ html {
 .footer-nav__link:focus,
 .footer-nav__link:active {
   color: #ffbc9e;
+
+  border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
 .footer-nav__link--favorite {
@@ -1103,6 +1170,14 @@ html {
   text-decoration: none;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright__link:hover,
+.footer-copyright__link:focus-within,
+.footer-copyright__link:active {
+  color: #ffbc9e;
+
+  border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
 
