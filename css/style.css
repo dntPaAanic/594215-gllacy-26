@@ -60,7 +60,7 @@ html {
 /*dropdown*/
 .dropdown {
   position: absolute;
-  top: 40px;
+  top: 35px;
   right: 0;
   z-index: 100;
 
@@ -288,7 +288,7 @@ html {
   left: -7px;
 
   width: 145px;
-  padding: 4px 0;
+  padding: 5px 0;
 
   list-style: none;
 }
@@ -351,6 +351,11 @@ html {
 /*user-list*/
 .user-list {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 360px;
+  margin-top: 23px;
+  margin-left: auto;
 
   list-style: none;
 }
@@ -358,10 +363,15 @@ html {
 .user-list__item {
   position: relative;
 
+  margin-bottom: 10px;
   margin-left: 10px;
+  padding: 0;
 }
 
-.user-list__item:hover > .dropdown,
+.user-list__item:hover > .dropdown {
+  display: block;
+}
+
 .user-list__item:focus-within > .dropdown {
   display: block;
 }
@@ -370,7 +380,11 @@ html {
   position: relative;
 
   display: block;
-  padding: 9px 13px;
+  min-height: 32px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 45px;
 
   font-weight: 500;
   font-size: 14px;
@@ -380,15 +394,13 @@ html {
 
   background-color: rgba(255,255,255,0.2);
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 .user-list__link--search {
-  width: 33px;
-  height: 33px;
-
-  border-radius: 50px;
+  width: 32px;
+  padding: 0;
 }
 
 .user-list__link:hover {
