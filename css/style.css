@@ -88,10 +88,7 @@ html {
 
 .input {
   height: 44px;
-  padding-top: 8px;
-  padding-right: 14px;
-  padding-bottom: 10px;
-  padding-left: 14px;
+  padding: 8px 14px 10px;
 
   font-weight: 400;
   font-size: 14px;
@@ -169,12 +166,14 @@ html {
 
 .page-header__contacts {
   position: absolute;
-  top: 70px;
-  right: 25px;
+  top: 73px;
+  right: 27px;
+  text-align: right;
 }
 
 .page-header__working-time {
   font-weight: 700;
+  margin: 0 0 4px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -208,10 +207,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   width: 600px;
-  margin-top: 22px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 23px 0 0;
   padding: 0;
 
   list-style: none;
@@ -223,20 +219,24 @@ html {
   padding-bottom: 15px;
 }
 
-.site-list__item:hover > .dropdown {
+/*.site-list__item:hover > .dropdown {*/
+/*  display: block;*/
+/*}*/
+
+/*.site-list__item:focus-within > .dropdown {*/
+/*  display: block;*/
+/*}*/
+.site-list__link:hover + .dropdown {
   display: block;
 }
 
-.site-list__item:focus-within > .dropdown {
+.site-list__link:focus + .dropdown {
   display: block;
 }
 
 .site-list__link {
   display: block;
-  padding-top: 7px;
-  padding-right: 14px;
-  padding-bottom: 6px;
-  padding-left: 14px;
+  padding: 7px 14px 6px;
 
   font-weight: 700;
   font-size: 16px;
@@ -288,7 +288,7 @@ html {
   left: -7px;
 
   width: 145px;
-  padding: 5px 0;
+  padding: 4px 0;
 
   list-style: none;
 }
@@ -310,10 +310,7 @@ html {
 
 .sub-nav__link {
   display: block;
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-bottom: 8px;
-  padding-left: 20px;
+  padding: 8px 20px;
 
   font-weight: 400;
   font-size: 14px;
@@ -381,10 +378,7 @@ html {
 
   display: block;
   min-height: 32px;
-  padding-top: 8px;
-  padding-right: 16px;
-  padding-bottom: 8px;
-  padding-left: 45px;
+  padding: 8px 16px 8px 45px;
 
   font-weight: 500;
   font-size: 14px;
@@ -398,15 +392,15 @@ html {
   cursor: pointer;
 }
 
-.user-list__link--search {
-  width: 32px;
-  padding: 0;
-}
-
 .user-list__link:hover {
   color: #323232;
 
   background-color: #f7f6f3;
+}
+
+.user-list__link--search {
+  width: 32px;
+  padding: 0;
 }
 
 .user-list__link--full-basket {
@@ -414,6 +408,44 @@ html {
 
   background-color: #f8f7f4;
 }
+
+.user-list__link--search .user-list__icon {
+  left: 8px;
+}
+
+.user-list__link--full-basket .user-list__icon path,
+.user-list__item:hover .user-list__icon path,
+.user-list__link:focus .user-list__icon path{
+  fill: #323232;
+}
+
+.user-list__item:focus-within .user-list__icon path{
+  fill: #323232;
+}
+
+.user-list__item:hover .user-list__link,
+.user-list__link:focus,
+.user-list__link--full-basket {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user-list__item:focus-within .user-list__link {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user-list__icon {
+  position: absolute;
+  left: 16px;
+  top: 7px;
+
+  fill: #ffffff;
+}
+
+
 
 
 
@@ -562,7 +594,7 @@ html {
   position: relative;
 
   display: none;
-  padding-top: 370px;
+  padding-top: 288px;
 
   text-align: center;
 }
@@ -773,10 +805,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 50px;
-  margin-left: 0;
+  margin: 0 0 50px;
   padding: 0;
 
   list-style: none;
