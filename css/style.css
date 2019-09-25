@@ -90,10 +90,10 @@ html {
   height: 44px;
   padding: 8px 14px 10px;
 
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 24px;
-  color: #999999;
+  color: #323232;
 
   background-color: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
@@ -108,7 +108,17 @@ html {
 .input:focus {
   border-color: rgba(46, 136, 228, 0.52);
   box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
+  outline: none;
 }
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+
 
 
 /*button*/
@@ -282,8 +292,13 @@ html {
 .site-list__link--active:focus,
 .site-list__link--active:active {
   color: #ffffff;
+  border: none;
 
   background-color: #d07058;
+}
+
+.site-list__link--active::after {
+  background-color: transparent;
 }
 
 
@@ -1386,8 +1401,8 @@ html {
   top: 0;
   left: 0;
   z-index: 100;
-
   display: none;
+
   width: 100%;
   height: 100%;
 
@@ -1399,9 +1414,11 @@ html {
 
 /*feedback*/
 .feedback {
-  position: fixed;
-  top: 25%;
-  left: 36%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -275px;
+  margin-left: -240px;
 
   width: 480px;
   padding: 16px 25px 25px;
@@ -1426,6 +1443,11 @@ html {
 
 .feedback__input {
   width: 265px;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .feedback__textarea {
@@ -1433,6 +1455,12 @@ html {
   width: 100%;
   height: 155px;
   margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  resize: none;
 }
 
 .feedback__button {
