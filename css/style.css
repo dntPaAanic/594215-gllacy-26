@@ -54,7 +54,7 @@ html {
 }
 
 .container--products {
-  padding: 0 12px;
+  padding: 0 13px;
 }
 
 /*dropdown*/
@@ -582,8 +582,12 @@ html {
 
 
 /*slider*/
+.slider__wrapper {
+  position: relative;
+  margin-bottom: 21px;
+}
 .slider__list {
-  min-height: 600px;
+  min-height: 525px;
   margin: 0;
   padding: 0;
 
@@ -594,7 +598,7 @@ html {
   position: relative;
 
   display: none;
-  padding-top: 288px;
+  padding-top: 292px;
 
   text-align: center;
 }
@@ -605,7 +609,7 @@ html {
 
 .slider__title {
   width: 675px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 
   font-weight: 700;
   font-size: 60px;
@@ -615,7 +619,7 @@ html {
 
 .slider__image {
   position: absolute;
-  top: 0;
+  top: -101px;
   right: 0;
   left: 0;
   z-index: -1;
@@ -626,10 +630,15 @@ html {
 .slider__button {
   font-size: 32px;
   line-height: 44px;
+  padding: 10px 40px;
 }
 
 .slider__control {
   display: flex;
+  position: absolute;
+  bottom: 41px;
+  left: 27px;
+  z-index: 1;
 }
 
 .slider__toggle {
@@ -744,9 +753,13 @@ html {
 
 
 /*offer*/
+.offer {
+  margin-bottom: 34px;
+}
 .offer__list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -759,9 +772,11 @@ html {
 
   width: 560px;
   min-height: 230px;
-  padding: 20px;
+  padding: 16px 19px 23px;
 
   border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .offer__item--raspberry {
@@ -792,8 +807,9 @@ html {
 
 .offer__button {
   position: absolute;
-  right: 30px;
-  bottom: 20px;
+  right: 21px;
+  bottom: 24px;
+  padding: 11px 22px;
 }
 
 
@@ -805,7 +821,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 0 50px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -818,15 +834,16 @@ html {
   flex-direction: column;
   align-items: center;
   width: 293px;
-  margin-bottom: -50px;
+  margin-bottom: -36px;
   padding: 6px 13px 22px;
+  border-radius: 7px;
 }
 
 .product__item::before {
   content: "";
   position: absolute;
-  top: 16px;
-  left: 15px;
+  top: 6px;
+  left: 13px;
 
   width: 61px;
   height: 61px;
@@ -851,7 +868,8 @@ html {
 }
 
 .product__name {
-  width: 250px;
+  width: 255px;
+  margin: 0 0 9px;
 
   font-weight: 400;
   font-size: 16px;
@@ -868,6 +886,7 @@ html {
 
 .product__photo {
   order: -1;
+  margin-bottom: 12px;
 
   border-radius: 50%;
 }
@@ -889,12 +908,17 @@ html {
   line-height: 45px;
 }
 
+.product__currency {
+  margin-left: 5px;
+}
+
 .product__amount {
   font-size: 30px;
 }
 
 .product__button {
   visibility: hidden;
+  margin-top: auto;
 }
 
 
@@ -903,7 +927,7 @@ html {
 /*advantages*/
 .advantages__wrapper {
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 25px 20px 23px;
 
   background-color: #ece0ca;
   background-image: url("../img/waffle-bg.jpg");
