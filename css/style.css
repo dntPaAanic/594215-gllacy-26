@@ -76,15 +76,15 @@ html {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-/*.dropdown::before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  bottom: 100%;*/
-/*  left: 0;*/
+.dropdown::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
 
-/*  width: 100%;*/
-/*  height: 7px;*/
-/*}*/
+  width: 100%;
+  height: 7px;
+}
 
 .input {
   height: 44px;
@@ -168,12 +168,14 @@ html {
   position: absolute;
   top: 73px;
   right: 27px;
+
   text-align: right;
 }
 
 .page-header__working-time {
-  font-weight: 700;
   margin: 0 0 4px;
+
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -219,20 +221,20 @@ html {
   padding-bottom: 15px;
 }
 
-/*.site-list__item:hover > .dropdown {*/
-/*  display: block;*/
-/*}*/
-
-/*.site-list__item:focus-within > .dropdown {*/
-/*  display: block;*/
-/*}*/
-.site-list__link:hover + .dropdown {
+.site-list__item:hover > .dropdown {
   display: block;
 }
 
-.site-list__link:focus + .dropdown {
+.site-list__item:focus-within > .dropdown {
   display: block;
 }
+/*.site-list__link:hover + .dropdown {*/
+/*  display: block;*/
+/*}*/
+
+/*.site-list__link:focus + .dropdown {*/
+/*  display: block;*/
+/*}*/
 
 .site-list__link {
   display: block;
@@ -268,6 +270,11 @@ html {
   color: #323232;
 
   background-color: #f7f6f3;
+}
+
+.site-list__link:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px #696969;
 }
 
 .site-list__link--active,
@@ -415,11 +422,11 @@ html {
 
 .user-list__link--full-basket .user-list__icon path,
 .user-list__item:hover .user-list__icon path,
-.user-list__link:focus .user-list__icon path{
+.user-list__link:focus .user-list__icon path {
   fill: #323232;
 }
 
-.user-list__item:focus-within .user-list__icon path{
+.user-list__item:focus-within .user-list__icon path {
   fill: #323232;
 }
 
@@ -439,8 +446,8 @@ html {
 
 .user-list__icon {
   position: absolute;
-  left: 16px;
   top: 7px;
+  left: 16px;
 
   fill: #ffffff;
 }
@@ -584,6 +591,7 @@ html {
 /*slider*/
 .slider__wrapper {
   position: relative;
+
   margin-bottom: 21px;
 }
 .slider__list {
@@ -628,17 +636,19 @@ html {
 }
 
 .slider__button {
+  padding: 10px 40px;
+
   font-size: 32px;
   line-height: 44px;
-  padding: 10px 40px;
 }
 
 .slider__control {
-  display: flex;
   position: absolute;
   bottom: 41px;
   left: 27px;
   z-index: 1;
+
+  display: flex;
 }
 
 .slider__toggle {
@@ -774,9 +784,9 @@ html {
   min-height: 230px;
   padding: 16px 19px 23px;
 
-  border-radius: 15px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
 }
 
 .offer__item--raspberry {
@@ -809,6 +819,7 @@ html {
   position: absolute;
   right: 21px;
   bottom: 24px;
+
   padding: 11px 22px;
 }
 
@@ -836,6 +847,7 @@ html {
   width: 293px;
   margin-bottom: -36px;
   padding: 6px 13px 22px;
+
   border-radius: 7px;
 }
 
@@ -851,7 +863,13 @@ html {
   background-image: url("../img/hit.svg");
 }
 
-.product__item:hover,
+.product__item:hover {
+  z-index: 10;
+
+  background-color: rgba(248, 247, 244, 0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
 .product__item:focus-within {
   z-index: 10;
 
@@ -917,8 +935,9 @@ html {
 }
 
 .product__button {
-  visibility: hidden;
   margin-top: auto;
+
+  visibility: hidden;
 }
 
 
@@ -938,7 +957,6 @@ html {
 .advantages__title {
   margin: 0;
 
-  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
@@ -959,8 +977,9 @@ html {
 .advantages__item {
   position: relative;
 
-  width: 530px;
-  margin-top: 20px;
+  width: 536px;
+  margin-top: 22px;
+  margin-bottom: 2px;
   padding-left: 55px;
 
   font-weight: 400;
@@ -971,11 +990,14 @@ html {
 .advantages__item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -14px;
   left: 0;
 
   width: 49px;
   height: 49px;
+
+  background-position: center;
+  background-size: cover;
 }
 
 .advantages__item--product::before {
@@ -983,6 +1005,8 @@ html {
 }
 
 .advantages__item--company::before {
+  left: -3px;
+
   background-image: url("../img/cow.svg");
 }
 
@@ -991,6 +1015,8 @@ html {
 }
 
 .advantages__item--delivery::before {
+  left: -3px;
+
   background-image: url("../img/thermometer.svg");
 }
 
@@ -1004,6 +1030,7 @@ html {
 .advert__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .advert__item {
@@ -1035,6 +1062,7 @@ html {
 
 .article-note__inner {
   width: 285px;
+  margin: 5px 0 0;
 }
 
 .article-note__preview {
@@ -1073,6 +1101,11 @@ html {
   border-radius: 10px;
 }
 
+.subscribe__form {
+  display: flex;
+  align-items: center;
+}
+
 .subscribe__title {
   margin: 0 0 35px;
 
@@ -1083,8 +1116,14 @@ html {
 }
 
 .subscribe__input {
+  flex-grow: 1;
   width: 368px;
+  margin-right: 10px;
+
+  font-size: 16px;
 }
+
+
 
 
 
@@ -1096,11 +1135,11 @@ html {
 }
 .contacts__address {
   position: absolute;
-  top: 50px;
+  top: 61px;
   right: 27px;
 
-  width: 300px;
-  padding: 25px 25px 30px;
+  width: 302px;
+  padding: 28px 25px 30px;
 
   color: #323232;
 
@@ -1124,7 +1163,7 @@ html {
 
 .contacts__description {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-weight: 700;
   font-size: 18px;
@@ -1137,7 +1176,11 @@ html {
 }
 
 .contacts__work-time {
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+}
+
+.contacts__button {
+  padding: 10px 27px;
 }
 
 
@@ -1178,7 +1221,9 @@ html {
 .page-footer__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 
@@ -1188,14 +1233,16 @@ html {
 .social-links__list {
   display: flex;
   flex-direction: row;
-  margin: 40px 0 0;
-  padding: 0;
+  flex-wrap: wrap;
+  width: 244px;
+  margin: 29px 0 0 0;
+  padding: 0 0 0 1px;
 
   list-style: none;
 }
 
 .social-links__item {
-  margin-right: 15px;
+  margin-right: 11px;
 }
 
 .social-links__link {
@@ -1247,7 +1294,7 @@ html {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 400px;
-  margin: 35px 0 0;
+  margin: 24px 0 0;
   padding: 0;
 
   list-style: none;
@@ -1255,6 +1302,7 @@ html {
 
 .footer-nav__item {
   min-width: 135px;
+  margin-right: 7px;
   padding-left: 22px;
 }
 
@@ -1299,10 +1347,12 @@ html {
 
 /*footer-copyright*/
 .footer-copyright {
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .footer-copyright__develop {
+  margin: 0;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
