@@ -107,8 +107,8 @@ html {
 
 .input:focus {
   border-color: rgba(46, 136, 228, 0.52);
-  box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
   outline: none;
+  box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
 input::placeholder {
@@ -295,9 +295,9 @@ input::placeholder {
 .site-list__link--active:focus,
 .site-list__link--active:active {
   color: #ffffff;
-  border: none;
 
   background-color: #d07058;
+  border: none;
 }
 
 .site-list__link--active::after {
@@ -376,8 +376,8 @@ input::placeholder {
   flex-direction: row;
   justify-content: flex-end;
   width: 360px;
-  padding: 0;
   margin: 23px 0 0 auto;
+  padding: 0;
 
   list-style: none;
 }
@@ -544,19 +544,18 @@ input::placeholder {
 
 /*basket*/
 .basket {
-  padding: 22px 15px;
   width: 540px;
+  padding: 22px 15px;
 
   text-align: right;
 }
 
 .basket__table {
-  text-align: left;
-
   border-collapse: collapse;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+  text-align: left;
 }
 
 .basket__table td {
@@ -588,11 +587,10 @@ input::placeholder {
 .basket__table .basket__product-photo {
   width: 45px;
   padding-top: 0;
-
 }
 .basket__table .basket__product-name {
-  padding-right: 30px;
   width: 250px;
+  padding-right: 30px;
 }
 
 .basket__calculate {
@@ -610,10 +608,11 @@ input::placeholder {
 }
 
 .basket__table .basket__total {
+  padding: 15px 0;
+
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  padding: 15px 0;
   text-align: right;
 
   border-top: 1px solid #cacac7;
@@ -743,6 +742,7 @@ input::placeholder {
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+
   border-bottom: 1px solid rgba(255,255,255, 0.3);
 }
 
@@ -750,6 +750,7 @@ input::placeholder {
 .breadcrumbs__link:focus,
 .breadcrumbs__link:active {
   color: #ffbc9e;
+
   border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
@@ -758,16 +759,18 @@ input::placeholder {
 .breadcrumbs__link--active:focus,
 .breadcrumbs__link--active:active {
   color: #ffffff;
+
   border-bottom-color: transparent;
 }
 
 
 .main__title {
-  color: #ffffff;
   margin: 0 0 26px;
+
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
+  color: #ffffff;
 }
 
 
@@ -784,44 +787,57 @@ input::placeholder {
   flex-wrap: wrap;
 }
 .filters-form__filter {
-  border: none;
-  padding: 0;
-  color: #ffffff;
   margin: 0 14px 15px 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  border: none;
 }
 
 .filters-form__title {
+  margin-bottom: 14px;
+  margin-left: 16px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 16px;
-  margin-bottom: 14px;
 }
 
 .filters-form__field {
-  margin: 0;
-  padding: 9px 16px 0;
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
-
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-
-  border: none;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   min-height: 37px;
+  margin: 0;
+  padding: 9px 16px 0;
+
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50px;
 }
 
 .filters-form__field--sort {
-  padding: 8px 16px;
   width: 195px;
+  padding: 8px 16px;
+
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 170px center;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.filters-form__field--sort::-ms-expand {
+  /* IE 10+ */
+  display: none;
 }
 
 .filters-form__field--sort:hover,
@@ -836,9 +852,9 @@ input::placeholder {
 }
 
 .filters-form__field--sort option {
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #323232;
 
   background-color: #ffffff;
@@ -1477,8 +1493,8 @@ input::placeholder {
   top: 0;
   left: 0;
   z-index: 100;
-  display: none;
 
+  display: none;
   width: 100%;
   height: 100%;
 
@@ -1493,11 +1509,11 @@ input::placeholder {
   position: relative;
   top: 50%;
   left: 50%;
-  margin-top: -275px;
-  margin-left: -240px;
   /*transform: translate(-50%, -50%);*/
 
   width: 480px;
+  margin-top: -275px;
+  margin-left: -240px;
   padding: 16px 25px 25px;
 
   color: #323232;
