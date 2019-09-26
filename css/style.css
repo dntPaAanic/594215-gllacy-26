@@ -228,7 +228,7 @@ input::placeholder {
 .site-list__item {
   position: relative;
 
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;*/
 }
 
 .site-list__item:hover > .dropdown {
@@ -373,8 +373,8 @@ input::placeholder {
   flex-direction: row;
   justify-content: flex-end;
   width: 360px;
-  margin-top: 23px;
-  margin-left: auto;
+  padding: 0;
+  margin: 23px 0 0 auto;
 
   list-style: none;
 }
@@ -459,11 +459,14 @@ input::placeholder {
   background-color: #f8f7f4;
 }
 
-.user-list__icon {
+.user-list__icon,
+.user-list__icon--full {
   position: absolute;
   top: 7px;
   left: 16px;
+}
 
+.user-list__icon {
   fill: #ffffff;
 }
 
@@ -540,14 +543,14 @@ input::placeholder {
 
 /*basket*/
 .basket {
-  display: none;
-  padding: 20px 15px;
+  padding: 22px 15px;
+  width: 540px;
 
   text-align: right;
 }
 
 .basket__table {
-  width: 540px;
+  text-align: left;
 
   border-collapse: collapse;
   font-weight: 400;
@@ -556,10 +559,12 @@ input::placeholder {
 }
 
 .basket__table td {
-  padding-right: 15px;
+  padding: 8px 14px 17px 0;
+
+  vertical-align: top;
 }
 
-.basket__delete {
+.basket__table .basket__delete {
   width: 25px;
   padding-top: 10px;
 }
@@ -575,29 +580,46 @@ input::placeholder {
   cursor: pointer;
 }
 
-.basket__product-photo {
-  width: 45px;
+.basket__table img {
+  border-radius: 50%;
 }
-.basket__product-name {
-  width: 220px;
 
-  text-align: left;
+.basket__table .basket__product-photo {
+  width: 45px;
+  padding-top: 0;
+
+}
+.basket__table .basket__product-name {
+  padding-right: 30px;
+  width: 250px;
 }
 
 .basket__calculate {
-  width: 110px;
+  width: 120px;
 }
 
-.basket__price {
-  width: 73px;
+.basket__calculate--opacity {
+  color: #999999;
 }
 
-.basket__total {
+.basket__table .basket__price {
+  width: 70px;
+  padding-right: 0;
+  padding-left: 1px;
+}
+
+.basket__table .basket__total {
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
+  padding: 15px 0;
+  text-align: right;
 
   border-top: 1px solid #cacac7;
+}
+
+.basket__button {
+  padding: 10px 14px;
 }
 
 
