@@ -210,6 +210,9 @@ input::placeholder {
   padding-bottom: 20px;
 }
 
+.main-nav--catalog {
+  padding-bottom: 17px;
+}
 
 
 
@@ -469,8 +472,6 @@ input::placeholder {
 .user-list__icon {
   fill: #ffffff;
 }
-
-
 
 
 
@@ -742,22 +743,28 @@ input::placeholder {
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255, 0.3);
 }
 
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus,
 .breadcrumbs__link:active {
   color: #ffbc9e;
+  border-bottom-color: rgba(255, 188, 158, 0.3);
 }
 
+.breadcrumbs__link--active,
 .breadcrumbs__link--active:hover,
 .breadcrumbs__link--active:focus,
 .breadcrumbs__link--active:active {
   color: #ffffff;
+  border-bottom-color: transparent;
 }
 
 
 .main__title {
+  color: #ffffff;
+  margin: 0 0 26px;
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
@@ -768,7 +775,7 @@ input::placeholder {
 
 /*filters-form*/
 .filters {
-  display: none;
+  margin-bottom: 18px;
 }
 
 .filters-form {
@@ -778,16 +785,63 @@ input::placeholder {
 }
 .filters-form__filter {
   border: none;
+  padding: 0;
+  color: #ffffff;
+  margin: 0 14px 15px 0;
 }
 
 .filters-form__title {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  margin-left: 16px;
+  margin-bottom: 14px;
 }
 
 .filters-form__field {
+  margin: 0;
+  padding: 9px 16px 0;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  border: none;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 37px;
+}
+
+.filters-form__field--sort {
+  padding: 8px 16px;
+  width: 195px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 170px center;
+}
+
+.filters-form__field--sort:hover,
+.filters-form__field--sort:focus {
+  color: #323232;
+
+  background-image: url("../img/icon-down-dir-hover.svg");
+}
+
+.filters-form__field--sort:focus {
+  background-color: #ffffff;
+}
+
+.filters-form__field--sort option {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+
+  background-color: #ffffff;
 }
 
 .filters-form__label {
@@ -1441,6 +1495,7 @@ input::placeholder {
   left: 50%;
   margin-top: -275px;
   margin-left: -240px;
+  /*transform: translate(-50%, -50%);*/
 
   width: 480px;
   padding: 16px 25px 25px;
