@@ -796,7 +796,7 @@ input::placeholder {
 }
 
 .filters-form__title {
-  margin-bottom: 14px;
+  margin-bottom: 6px;
   margin-left: 16px;
 
   font-weight: 500;
@@ -829,14 +829,10 @@ input::placeholder {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 170px center;
-
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .filters-form__field--sort::-ms-expand {
-  /* IE 10+ */
   display: none;
 }
 
@@ -864,6 +860,20 @@ input::placeholder {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+}
+
+.filters-form__field--range {
+  position: relative;
+  margin: 0 12px;
+  padding: 9px 10px;
+  width: 196px;
+  height: 22px;
+}
+
+.range-scale {
+  width: 176px;
+  height: 4px;
+  background-color: rgba(248,247,244,0.5);
 }
 
 
