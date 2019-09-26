@@ -863,6 +863,10 @@ input::placeholder {
 }
 
 .filters-form__field--range {
+  padding: 7px 0;
+}
+
+.range-scale {
   position: relative;
   margin: 0 12px;
   padding: 9px 10px;
@@ -870,10 +874,18 @@ input::placeholder {
   height: 22px;
 }
 
-.range-scale {
+.range-scale__scale {
   width: 176px;
   height: 4px;
-  background-color: rgba(248,247,244,0.5);
+  background-color: rgba(248, 247, 255, 0.5);
+}
+
+.range-scale__between-toggle {
+  margin-left: 23px;
+  margin-right: 55px;
+  height: 4px;
+  background-color: #f8f7f4;
+  opacity: 1;
 }
 
 
