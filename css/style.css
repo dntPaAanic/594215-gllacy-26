@@ -806,6 +806,7 @@ input::placeholder {
 
 .filters-form__field {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   min-height: 37px;
   margin: 0;
@@ -829,6 +830,7 @@ input::placeholder {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 170px center;
+
   appearance: none;
 }
 
@@ -868,26 +870,84 @@ input::placeholder {
 
 .range-scale {
   position: relative;
-  margin: 0 12px;
-  padding: 9px 10px;
+
   width: 196px;
   height: 22px;
+  margin: 0 12px;
+  padding: 9px 10px;
 }
 
 .range-scale__scale {
   width: 176px;
   height: 4px;
+
   background-color: rgba(248, 247, 255, 0.5);
 }
 
 .range-scale__between-toggle {
-  margin-left: 23px;
-  margin-right: 55px;
   height: 4px;
+  margin-right: 55px;
+  margin-left: 23px;
+
   background-color: #f8f7f4;
   opacity: 1;
 }
 
+.range-scale__toggle {
+  position: absolute;
+  top: 1px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #ababab;
+  cursor: pointer;
+}
+
+.range-scale__toggle:hover,
+.range-scale__toggle:focus {
+  top: 0;
+
+  width: 22px;
+  height: 22px;
+
+  transform: translateX(-1px);
+}
+
+.range-scale__toggle--min {
+  left: 23px;
+}
+
+.range-scale__toggle--max {
+  margin-left: 121px;
+}
+
+
+.filters-form__item {
+  position: relative;
+
+  margin-right: 17px;
+  padding-left: 32px;
+}
+
+.filters-form__radio,
+.filters-form__checkbox {
+  display: none;
+}
+
+.filters-form__label::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+}
+
+.filters-form__label--radio {
+
+}
 
 
 
