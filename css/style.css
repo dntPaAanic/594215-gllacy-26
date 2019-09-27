@@ -777,6 +777,68 @@ input::placeholder {
 
 
 
+/*range scale*/
+.range-scale {
+  position: relative;
+
+  width: 196px;
+  height: 22px;
+  margin: 0 12px;
+  padding: 9px 10px;
+}
+
+.range-scale__scale {
+  width: 176px;
+  height: 4px;
+
+  background-color: rgba(248, 247, 255, 0.5);
+}
+
+.range-scale__between-toggle {
+  height: 4px;
+  margin-right: 55px;
+  margin-left: 23px;
+
+  background-color: #f8f7f4;
+  opacity: 1;
+}
+
+.range-scale__toggle {
+  position: absolute;
+  top: 1px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #ababab;
+  cursor: pointer;
+}
+
+.range-scale__toggle:hover,
+.range-scale__toggle:focus {
+  top: 0;
+
+  width: 22px;
+  height: 22px;
+
+  border-width: 9px;
+  box-shadow: 0 3px 0 0 #a3a3a3;
+  transform: translateX(-1px);
+}
+
+.range-scale__toggle--min {
+  left: 23px;
+}
+
+.range-scale__toggle--max {
+  margin-left: 110px;
+}
+
+
+
 
 /*filters-form*/
 .filters {
@@ -871,66 +933,6 @@ input::placeholder {
   padding: 7px 0;
 }
 
-.range-scale {
-  position: relative;
-
-  width: 196px;
-  height: 22px;
-  margin: 0 12px;
-  padding: 9px 10px;
-}
-
-.range-scale__scale {
-  width: 176px;
-  height: 4px;
-
-  background-color: rgba(248, 247, 255, 0.5);
-}
-
-.range-scale__between-toggle {
-  height: 4px;
-  margin-right: 55px;
-  margin-left: 23px;
-
-  background-color: #f8f7f4;
-  opacity: 1;
-}
-
-.range-scale__toggle {
-  position: absolute;
-  top: 1px;
-
-  width: 20px;
-  height: 20px;
-
-  background-color: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 0 0 #ababab;
-  cursor: pointer;
-}
-
-.range-scale__toggle:hover,
-.range-scale__toggle:focus {
-  top: 0;
-
-  width: 22px;
-  height: 22px;
-
-  border-width: 9px;
-  box-shadow: 0 3px 0 0 #a3a3a3;
-  transform: translateX(-1px);
-}
-
-.range-scale__toggle--min {
-  left: 23px;
-}
-
-.range-scale__toggle--max {
-  margin-left: 110px;
-}
-
-
 .filters-form__item {
   position: relative;
 
@@ -978,10 +980,40 @@ input[type="radio"]:checked ~ .filters-form__label--radio::before {
   background-image: url("../img/checkbox-off.svg");
 }
 
+.filters-form__label:hover::before {
+  opacity: 1;
+}
+
 input[type="checkbox"]:checked ~.filters-form__label--checkbox::before {
   width: 24px;
   background-image: url("../img/checkbox-on.svg");
 }
+
+input:focus ~ .filters-form__label::before {
+  outline: 1px dotted;
+  opacity: 1;
+  /*box-shadow: 0 0 3pt 2pt rgba(255, 255, 255, 0.5);*/
+}
+
+input:disabled + .filters-form__label,
+input:disabled + .filters-form__label::before {
+  opacity: 0.4;
+}
+
+
+.filters-form__button {
+  padding: 7px 28px 7px 28px;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
 
 
 
