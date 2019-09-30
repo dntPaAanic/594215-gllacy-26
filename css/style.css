@@ -1408,9 +1408,14 @@ input:disabled + .filters-form__label::before {
 
 
 /*contacts*/
+.contacts__map {
+  line-height: 0;
+
+}
 .contacts__map-image {
   width: 1200px;
   height: 430px;
+
 }
 .contacts__address {
   position: absolute;
@@ -1581,7 +1586,7 @@ input:disabled + .filters-form__label::before {
   flex-direction: row;
   flex-wrap: wrap;
   width: 244px;
-  margin: 29px 0 0 0;
+  margin: 35px 0 0 0;
   padding: 0 0 0 1px;
 
   list-style: none;
@@ -1640,7 +1645,7 @@ input:disabled + .filters-form__label::before {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 400px;
-  margin: 24px 0 0;
+  margin: 30px 0 0;
   padding: 0;
 
   list-style: none;
@@ -1693,7 +1698,7 @@ input:disabled + .filters-form__label::before {
 
 /*footer-copyright*/
 .footer-copyright {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .footer-copyright__develop {
