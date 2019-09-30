@@ -1556,7 +1556,20 @@ input:disabled + .filters-form__label::before {
 }
 
 .page-footer__wrapper--catalog {
-  padding-top: 6px;
+  /*margin-top: 6px;*/
+
+}
+
+.page-footer__wrapper--catalog::before {
+  content: "";
+
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255,255, 255, 0.3);
 }
 
 
