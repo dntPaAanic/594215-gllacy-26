@@ -252,7 +252,7 @@ input[type="radio"].visually-hidden {
 
 .page-header__contacts {
   position: absolute;
-  top: 73px;
+  top: calc(100% - 25px);
   right: 27px;
 
   text-align: right;
@@ -465,6 +465,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
