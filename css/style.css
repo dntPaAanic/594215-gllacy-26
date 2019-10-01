@@ -124,35 +124,7 @@ input[type="radio"].visually-hidden {
           box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
-.input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-}
-
-.input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-}
-
-.input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-}
-
-.input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #999999;
-}
-
-.input::placeholder {
+input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -252,7 +224,7 @@ input[type="radio"].visually-hidden {
 
 .page-header__logo img {
   width: 154px;
-  height: 62px;
+  height: 64px;
 }
 
 .page-header__contacts {
@@ -632,6 +604,9 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
+.login-form__button {
+  width: 103px;
+}
 .login-form__account {
   width: 120px;
 
@@ -641,7 +616,7 @@ input[type="radio"].visually-hidden {
 .login-form__link {
   font-weight: 400;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 22px;
   color: #323232;
 }
 
@@ -1200,7 +1175,7 @@ input:disabled + .filters-form__label::before {
 
 .offer__item {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   width: 560px;
   min-height: 230px;
@@ -1563,7 +1538,7 @@ input:disabled + .filters-form__label::before {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 30px 20px 35px;
+  padding: 26px 20px 35px;
 
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -1579,7 +1554,7 @@ input:disabled + .filters-form__label::before {
 }
 
 .subscribe__title {
-  margin: 0 0 35px;
+  margin: 0 0 38px;
 
   font-weight: 400;
   font-size: 16px;
@@ -1593,8 +1568,11 @@ input:disabled + .filters-form__label::before {
   flex-grow: 1;
   width: 368px;
   margin-right: 10px;
+  letter-spacing: 1.18px;
 
   font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 
