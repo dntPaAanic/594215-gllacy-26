@@ -124,7 +124,7 @@ input[type="radio"].visually-hidden {
           box-shadow: inset 0 0 0 1px rgba(46, 136, 228, 0.52);
 }
 
-input::placeholder {
+.input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -739,7 +739,7 @@ input::placeholder {
 
 .slider__title {
   width: 675px;
-  margin: 0 auto 33px;
+  margin: 0 auto 32px;
 
   font-weight: 700;
   font-size: 60px;
@@ -749,7 +749,7 @@ input::placeholder {
 
 .slider__image {
   position: absolute;
-  top: -97px;
+  top: -99px;
   right: 0;
   left: 0;
   z-index: -1;
@@ -1179,7 +1179,7 @@ input:disabled + .filters-form__label::before {
 
   width: 560px;
   min-height: 230px;
-  padding: 16px 19px 23px;
+  padding: 14px 19px 23px;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -1407,7 +1407,6 @@ input:disabled + .filters-form__label::before {
 
   width: 536px;
   margin-top: 22px;
-  margin-bottom: 2px;
   padding-left: 55px;
 
   font-weight: 400;
