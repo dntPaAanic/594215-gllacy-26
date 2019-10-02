@@ -426,11 +426,11 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
       flex-direction: row;
+  flex-wrap: wrap;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -737,9 +737,9 @@ input[type="radio"].visually-hidden {
   right: 0;
   left: 0;
   z-index: -1;
+
   width: 1045px;
   height: 881px;
-
   margin: 0 auto;
 }
 
@@ -1159,10 +1159,10 @@ input:disabled + .filters-form__label::before {
 
 .offer__item {
   position: relative;
-  margin-bottom: 32px;
 
   width: 560px;
   min-height: 230px;
+  margin-bottom: 32px;
   padding: 16px 19px 23px;
 
   background-repeat: no-repeat;
@@ -1452,8 +1452,8 @@ input:disabled + .filters-form__label::before {
 }
 .advert__item {
   width: 560px;
-  margin-bottom: 38px;
   min-height: 220px;
+  margin-bottom: 38px;
 
   border-radius: 15px;
 }
@@ -1552,11 +1552,11 @@ input:disabled + .filters-form__label::before {
   flex-grow: 1;
   width: 368px;
   margin-right: 10px;
-  letter-spacing: 1.18px;
 
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
+  letter-spacing: 1.18px;
 }
 
 
