@@ -1597,6 +1597,7 @@ input:disabled + .filters-form__label::before {
 .contacts__map {
   line-height: 0;
   height: 430px;
+  z-index: -1;
 }
 
 .contacts__map-image {
@@ -1611,7 +1612,7 @@ input:disabled + .filters-form__label::before {
 
 .contacts__address {
   position: absolute;
-  top: 63px;
+  top: -367px;
   right: 27px;
 
   width: 302px;
