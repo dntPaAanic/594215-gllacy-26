@@ -720,6 +720,30 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.slider__item::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item--green::before {
+  background-color: #849d8f;
+}
+
+.slider__item--blue::before {
+  background-color: #8996a6;
+}
+
+.slider__item--brown::before {
+  background-color: #9d8b84;
+}
+
 .slider__item--active {
   display: block;
 }
