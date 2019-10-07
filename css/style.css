@@ -1762,6 +1762,7 @@ input:disabled + .filters-form__label::before {
 .contacts__map-interactive {
   width: 100%;
   height: 430px;
+  border: 0;
 }
 
 .contacts__address {
