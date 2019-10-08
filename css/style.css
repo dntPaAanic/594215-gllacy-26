@@ -1352,7 +1352,7 @@ input:disabled + .filters-form__label::before {
 
 .offer__item--chocolate {
   background-color: #30170d;
-  background-image: url("../img/choсolate-bg.jpg");
+  background-image: url("../img/choco-bg.jpg");
 }
 
 .offer__title {
